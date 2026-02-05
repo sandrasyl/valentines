@@ -139,3 +139,35 @@ p {
   background-color: rgba(255, 240, 240, 0.5);
   border-radius: 12px;
 }
+
+/* === Estilos responsivos para móvil === */
+@media (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .envelope,
+  .envelope img,
+  .envelope * {
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  .envelope {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .envelope .content {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .envelope img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}
