@@ -155,7 +155,7 @@ p {
   }
 
   .envelope img {
-    width: 100%;
+    width: 80%;
     height: auto;
     max-width: 100%;
     display: block;
@@ -164,7 +164,7 @@ p {
 
   .envelope .text,
   .envelope .content {
-    font-size: 0.9rem !important;
+    font-size: 0.6rem !important;
     line-height: 1.2;
     padding: 0.3rem !important;
   }
