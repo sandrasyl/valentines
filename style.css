@@ -140,34 +140,40 @@ p {
   border-radius: 12px;
 }
 
-/* === Estilos responsivos para móvil === */
+.envelope,
+.envelope * {
+  box-sizing: border-box;
+}
+
+/* ➤ Media query para móviles */
 @media (max-width: 600px) {
-  html,
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  .envelope,
-  .envelope img,
-  .envelope * {
-    max-width: 100%;
-    height: auto !important;
-  }
-
   .envelope {
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  .envelope .content {
-    font-size: 0.9rem;
+    width: 95% !important;
+    max-width: 400px !important;
+    margin: 0 auto;
     padding: 0.5rem;
   }
 
   .envelope img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
-    max-width: 90%;
+  }
+
+  .envelope .text,
+  .envelope .content {
+    font-size: 0.9rem !important;
+    line-height: 1.2;
+    padding: 0.3rem !important;
+  }
+
+  button,
+  .button {
+    width: 45%;
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin: 0.3rem 2%;
   }
 }
